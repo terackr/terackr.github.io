@@ -25,6 +25,7 @@ jobs:
           node-version: '16'
       # Install PostCSS plugins (from your package.json)
       - run: npm install
+      - run: npm run build
       - name: Build site
       # use jekyll-action-ts to build
       # https://github.com/limjh16/jekyll-action-ts
@@ -36,7 +37,6 @@ jobs:
           ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
       # use actions-gh-pages to deploy
       # https://github.com/peaceiris/actions-gh-pages
-      - run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
