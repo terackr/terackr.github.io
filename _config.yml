@@ -41,3 +41,9 @@ footer-msg-link: https://github.com/harrywang/tailpages
 plugins:
     - jekyll-seo-tag
     - jekyll-postcss-v2
+
+sass:
+  load_paths:
+    - node_modules
+
+include: ["node_modules/tailwindcss"]
