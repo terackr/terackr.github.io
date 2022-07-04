@@ -1,0 +1,6 @@
+<article>
+    <a href="{{ .Permalink }}" aria-label="Read Article" class="block duration-200 hover:opacity-80">
+        <h3 class="font-bold text-2xl">{{ .Title }}</h3>
+        <p class="my-3">{{ .Date | time.Format "2015/01/21" }}</p>
+    </a>
+</article>

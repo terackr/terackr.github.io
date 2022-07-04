@@ -1,0 +1,19 @@
+{{- partial "analytics" . -}}
+<meta charset="utf-8">
+<title>{{site.Title}}{{if not .IsHome}} | {{.Title}}{{end}}</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href='{{ "favicon-32x32.png" | relURL }}'>
+{{ $styles := resources.Get "css/style.css" | postCSS }}
+{{ if .Site.IsServer }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ else }}
+{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ end }}
+<link href="https://fonts.bunny.net/css?family=inter:400,600,700|noto-sans-jp:400,700" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+<style>
+    i {
+        font-style: normal;
+    }
+</style>

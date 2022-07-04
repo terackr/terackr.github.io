@@ -1,0 +1,7 @@
+{{- $alt := .Get "alt" -}}
+{{- $src := .Get "src" -}}
+{{- $class := .Get "class" -}}
+{{- if not $src -}}
+{{ errorf "missing value for param 'src': ％s" .Position }}
+{{- end -}}
+<img alt="{{ $alt }}" src="{{ $src }}" class="{{ $class }}" />

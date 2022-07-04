@@ -1,0 +1,39 @@
+baseURL = "https://terackr.github.io"
+title = "Terack"
+languageCode = "ja"
+DefaultContentLanguage = "ja"
+enableInlineShortcodes = true
+theme = "intrack"
+enableRobotsTXT = true
+ 
+
+hasCJKLanguage = true
+
+[params]
+# The number of articles to be displayed on a single page.
+paginator_pages = "5"
+
+  [params.homepage_meta_tags]
+    meta_description = "Terack Portfolio"
+    meta_og_title = "Terack"
+    meta_og_type = "website"
+    meta_og_url = "https://terackr.github.io"
+    meta_og_image = "https://terackr.github.io/img/ogp.png"
+    meta_og_description = "Terack Portfolio"
+    meta_twitter_card = "summary_large_image"
+    meta_twitter_site = "@terackr"
+    meta_twitter_creator = "@terackr"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 2

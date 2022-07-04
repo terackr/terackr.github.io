@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode }}'>
+
+<head>
+    {{- partial "head.html" . -}}
+    {{ block "meta_tags" . }}{{end}}
+</head>
+
+<body class="font-sans mt-10 flex flex-col max-w-2xl mx-auto">
+    {{- partial "header.html" . -}}
+    <div class="container mx-auto my-4 flex-grow text-center" id="content">
+        <img src="https://pbs.twimg.com/profile_images/1543579969212690432/_3g2qCD7_400x400.jpg"
+            class="rounded-full w-40 mx-auto" />
+        <h1 class="my-5 text-4xl font-bold">Terack</h1>
+        <p class="my-7 text-lg text-gray-700">Web Developer && Movie Creator</p>
+        {{- partial "social.html" . -}}
+    </div>
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>

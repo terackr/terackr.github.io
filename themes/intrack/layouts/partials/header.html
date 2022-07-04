@@ -1,0 +1,17 @@
+<header class="bg-white">
+  <nav class="flex items-center justify-center flex-wrap p-4">
+    <div class="flex gap-7 text-lg mt-3 lg:m-0">
+      {{ if not .IsHome }}
+      <a href="{{ .Site.BaseURL }}"
+        class="block mt-4 text-gray-600 lg:inline-block lg:mt-0 hover:text-black duration-200">
+        Home
+      </a>
+      {{ end }}
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="block mt-4 text-gray-600 lg:inline-block lg:mt-0 hover:text-black duration-200">
+        {{ .Name }}
+      </a>
+      {{ end }}
+    </div>
+  </nav>
+</header>

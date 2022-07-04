@@ -1,0 +1,11 @@
+name = "InTrack"
+license = "MIT"
+licenselink = "https://github.com/terackr/terackr.github.io/LICENSE"
+
+homepage = "https://github.com/terackr/terackr.github.io"
+
+tags = ["minimal", "blog"]
+features = ["simple"]
+[author]
+  name = "terack"
+  homepage = "https://terackr.github.io"

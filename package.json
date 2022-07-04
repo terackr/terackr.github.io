@@ -1,0 +1,23 @@
+{
+  "name": "terack",
+  "version": "0.0.1",
+  "description": "Terack Portfolio",
+  "main": "index.js",
+  "repository": "https://github.com/terackr/terackr.github.io",
+  "author": "wamo <ainznino@pm.me>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently npm:watch:*",
+    "watch:tw": "tailwindcss --minify -i ./themes/intrack/assets/css/main.css -o ./themes/intrack/assets/css/style.css --watch",
+    "watch:hugo": "hugo server",
+    "build": "hugo --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
+    "autoprefixer": "^10.4.0",
+    "concurrently": "^6.4.0",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.3"
+  }
+}
